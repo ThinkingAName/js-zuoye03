@@ -1,0 +1,52 @@
+<!doctype html>               <!--申明html文档-->
+<html>
+<head>
+    <meta charset="utf-8">      <!--字符编码为国际编码-->
+    <meta name="Author" content="40期风屿JS——不懂就问">    <!--网页创建者-->
+    <meta name="Keywords" content="作业，练习题">         <!--供搜索引擎搜索匹配的关键-->
+    <meta name="description" content="课后练习题作业，熟悉课堂学习操作">  <!--在搜索有结果页面显示的网页描述-->
+    <title>第3次课后作业</title>   <!--网页标题-->
+    <!--
+  <link rel="stylesheet" type="text/css" href="css/common.css">  引入css样式文件
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  -->
+    <style>
+    #text {
+    width:200px;
+    height:200px;
+
+    }
+    </style>
+</head>
+<body>
+    <textarea id="text"></textarea>
+    <input id="submit" type="submit" name="提交">
+    <div></div>
+
+    <script>
+       // alert("js");
+        var  content = document.getElementById("submit");
+        var  value1 = null;
+       // var  value2;
+       var value2 =  "<p></p>" ;
+      // document.getElementsByTagName("p")[0].style.display = "none";
+       console.log(content);
+            content.onclick = function () {
+                value1 = document.getElementById("text").value;
+                //var value3 =  value2  + "<p>" + value1 + "</p>";
+                 value2 += "<p>" + value1 + "</p>";
+               console.log(value2);
+            //    document.getElementsByTagName("div")[0].innerHTML = (value1+=);
+                document.getElementsByTagName("div")[0].innerHTML = (value2);
+                document.getElementsByTagName("p")[0].style.display = "none";
+
+               // console.log(this);
+            };
+
+
+    </script>
+</body>
+
+</html>
